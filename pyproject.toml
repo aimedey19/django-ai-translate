@@ -1,0 +1,56 @@
+[project]
+name = "django-ai-translate"
+version = "0.0.1"
+description = "Django AI Translate"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+dependencies = [
+    "cappa>=0.27.2",
+    "django>=1.11",
+    "groq>=0.25.0",
+    "openai>=1.79.0",
+    "polib>=1.2.0",
+    "six>=1.17.0",
+    "together>=1.5.8",
+    "tqdm>=4.67.1",
+    "yaspin>=3.1.0",
+]
+authors = [
+    {name = "Aimé DEGBEY", email = "aime.degbey@kodesio.com"},
+]
+
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 1.11",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+
+
+[tool.setuptools]
+packages = ["django_ai_translate"]
+include-package-data = true
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[pytest]
+python_files = "tests/test_*.py"
+addopts = "-ra --tqdm"
+

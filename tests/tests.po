@@ -1,0 +1,25 @@
+#
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#: greetings.py:1
+msgid "Bonjour"
+msgstr ""
+
+#: greetings.py:2
+msgid "Bonsoir"
+msgstr ""
+
+#: greetings.py:3
+msgid "Merci"
+msgstr ""
+
+#: greetings.py:4
+msgid "Au revoir"
+msgstr ""
+
+#: greetings.py:5
+msgid "Comment ça va ?"
+msgstr ""
