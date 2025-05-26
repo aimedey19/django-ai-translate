@@ -110,6 +110,3 @@ uv sync
 
 MIT License © Aime & Contributors
 
----
-
-Let me know if you'd like a badge header (like PyPI version, build status, etc.), or if you're publishing this to PyPI and need help setting up `pyproject.toml` metadata.
