@@ -4,7 +4,6 @@ AI_TRANSLATOR = getattr(settings, 'AI_TRANSLATOR', {
     'ENGINE': '',
     'API_KEY': '',
     'MODEL': '',
-    'LANGUAGE': "en",
     'PROMPT_TEXT': "You are a web application translator. Don't ouput thinking. Don't add anything else than result. Translate the following text to "
 })
 

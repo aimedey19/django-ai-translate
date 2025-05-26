@@ -56,27 +56,18 @@ This command will:
 
 ---
 
-## 🧩 Configuration
 
-### Environment Variables
+## ⚙️ Django Configuration
 
-Set your preferred AI backend credentials:
+In your Django `settings.py`, add the following to configure the translator:
 
-```env
-OPENAI_API_KEY=your-key
-# or for Groq
-GROQ_API_KEY=your-key
-```
-
----
-
-## 📦 Build & Publish (optional)
-
-To build your package (requires `build`):
-
-```bash
-uv pip install build
-python -m build
+```python
+AI_TRANSLATOR =  {
+    'ENGINE': '',  # e.g. 'groq', 'openai', or 'together'. The package only support these three api for now.
+    'API_KEY': '',  # Your API key
+    'MODEL': '',  # e.g. 'gpt-4', 'llama-3-70b'
+    'PROMPT_TEXT': "You are a web application translator. Don't ouput thinking. Don't add anything else than result. Translate the following text to "
+}
 ```
 
 ---

@@ -3,7 +3,7 @@ from tqdm import tqdm
 from .settings import AI_TRANSLATOR, AI_CLIENT as client, AI_ASYNC_CLIENT as async_client
 
 def translate_text(text, 
-                         target_language=AI_TRANSLATOR['LANGUAGE'], 
+                         target_language, 
                          model=AI_TRANSLATOR['MODEL'], 
                          prompt_text=AI_TRANSLATOR['PROMPT_TEXT']):
     prompt = f"{prompt_text} {target_language}:\n\n{text}"
@@ -15,7 +15,7 @@ def translate_text(text,
 
 
 async def async_translate_text(text, 
-                         target_language=AI_TRANSLATOR['LANGUAGE'], 
+                         target_language, 
                          model=AI_TRANSLATOR['MODEL'], 
                          prompt_text=AI_TRANSLATOR['PROMPT_TEXT']):
     prompt = f"{prompt_text} {target_language}:\n\n{text}"

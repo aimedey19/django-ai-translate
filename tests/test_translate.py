@@ -28,7 +28,7 @@ def test_translation():
 
         tqdm.write("")
         with yaspin(text="Translating...") as spinner:
-            results = translate_text(msgids)
+            results = translate_text(msgids, "es")
             spinner.ok("✅")
             with open("results.txt", "w") as f:
                 f.write(results)
