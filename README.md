@@ -63,7 +63,7 @@ In your Django `settings.py`, add the following to configure the translator:
 
 ```python
 AI_TRANSLATOR =  {
-    'ENGINE': '',  # e.g. 'groq', 'openai', or 'together'. The package only support these three api for now.
+    'ENGINE': '',  # e.g. 'groq', 'openai', 'anthropic', or 'together'. The package only support these four api for now.
     'API_KEY': '',  # Your API key
     'MODEL': '',  # e.g. 'gpt-4', 'llama-3-70b'
     'PROMPT_TEXT': "You are a web application translator. Don't ouput thinking. Don't add anything else than result. Translate the following text to "

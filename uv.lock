@@ -81,6 +81,24 @@ wheels = [
 ]
 
 [[package]]
+name = "anthropic"
+version = "0.53.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "distro" },
+    { name = "httpx" },
+    { name = "jiter" },
+    { name = "pydantic" },
+    { name = "sniffio" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c1/f6/a78ff9e23981fde136c3ae5427a39b27df92ebe5e5997c6203796449f1e5/anthropic-0.53.0.tar.gz", hash = "sha256:f5d1499fc45b2e05801fcbbeae25679f72f7479763e3c706126a7a7c8de06eff", size = 307716 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a9/3f/82c21f74afa3541d69d20b8265c7fdfd078a687e9eea48fda30f1838d0b7/anthropic-0.53.0-py3-none-any.whl", hash = "sha256:b3a84751885a81d96bbddef180c3ce559c9140f7f230cdd825385405bd6d312e", size = 287248 },
+]
+
+[[package]]
 name = "anyio"
 version = "4.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -208,6 +226,7 @@ name = "django-ai-translate"
 version = "0.0.1"
 source = { editable = "." }
 dependencies = [
+    { name = "anthropic" },
     { name = "cappa" },
     { name = "django" },
     { name = "groq" },
@@ -221,6 +240,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "anthropic", specifier = ">=0.53.0" },
     { name = "cappa", specifier = ">=0.27.2" },
     { name = "django", specifier = ">=1.11" },
     { name = "groq", specifier = ">=0.25.0" },

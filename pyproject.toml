@@ -1,11 +1,12 @@
 [project]
 name = "django-ai-translate"
-version = "0.0.1"
+version = "0.1.1"
 description = "Django AI Translate"
 readme = "README.md"
 requires-python = ">=3.12"
 license = {file = "LICENSE"}
 dependencies = [
+    "anthropic>=0.53.0",
     "cappa>=0.27.2",
     "django>=1.11",
     "groq>=0.25.0",

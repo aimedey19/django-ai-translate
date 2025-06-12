@@ -22,5 +22,11 @@ if AI_TRANSLATOR['ENGINE'] == 'together':
     client = Together(api_key=AI_TRANSLATOR['API_KEY'])
     async_client = AsyncTogether(api_key=AI_TRANSLATOR['API_KEY'])
 
+if AI_TRANSLATOR['ENGINE'] == 'anthropic':
+    from anthropic import Anthropic, AsyncAnthropic
+    client = Anthropic(api_key=AI_TRANSLATOR['API_KEY'])
+    async_client = AsyncAnthropic(api_key=AI_TRANSLATOR['API_KEY'])
+
+
 AI_CLIENT = client
 AI_ASYNC_CLIENT = async_client
